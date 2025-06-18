@@ -1,4 +1,4 @@
-module.exports = {
+const eslintConfig = {
   semi: true,
   singleQuote: true,
   tabWidth: 2,
@@ -7,3 +7,5 @@ module.exports = {
   arrowParens: 'always',
   bracketSameLine: true,
 };
+
+export default eslintConfig;
