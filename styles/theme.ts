@@ -17,14 +17,14 @@ const theme = createTheme({
   },
   palette: {
     primary: {
-      dark: '#11608e',
-      main: '#0081a7',
-      light: '#66B8D1',
+      dark: '#2E7D32',
+      main: '#95C11F',
+      light: '#CDECB066',
     },
     secondary: {
-      dark: '#A82700',
-      main: '#C7481D',
-      light: '#ffe4d2',
+      dark: '#CC6B00',
+      main: '#FF8600',
+      light: '#FFA940',
     },
     common: {
       white: '#F8F8F8',
@@ -49,7 +49,7 @@ const theme = createTheme({
           margin: '0',
         },
         body: {
-          backgroundColor: '#F2F2F2',
+          backgroundColor: '#F1F2F6',
           height: '100%',
           fontSize: '16px',
           margin: '0',
