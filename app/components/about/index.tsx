@@ -8,7 +8,7 @@ import { Constants } from './constants';
 
 export default function About() {
   return (
-    <Box id="inicio" mt={10}>
+    <Box id="sobre" mt={10}>
       <TopSectionWithWave />
       <Box px={5} py={2} bgcolor="secondary.dark" display="flex" justifyContent="center">
         <GridContainer container spacing={{ xs: 4, md: 10 }}>
