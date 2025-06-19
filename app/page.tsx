@@ -3,7 +3,7 @@ import Intro from './components/intro';
 
 export default function Home() {
   return (
-    <Box mt={10}>
+    <Box>
       <Intro />
     </Box>
   );

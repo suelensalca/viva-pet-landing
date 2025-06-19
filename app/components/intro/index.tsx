@@ -1,40 +1,28 @@
 'use client';
 
 import { Box, Grid, Typography } from '@mui/material';
-import { SectionWithWave } from './styles';
-import Image from 'next/image';
+import { SectionWithWave, StyledImage } from './styles';
 import intro from '../../assets/intro.jpg';
+import { BoldTitle, GridContainer } from '../UI';
+import { Constants } from './constants';
 
 export default function Intro() {
   return (
-    <Box>
-      <Box p={5} bgcolor="primary.dark">
-        <Grid container spacing={10} m={4}>
-          <Grid size={6} textAlign="center" alignContent="center">
-            <Typography mb={4} fontWeight={600} fontSize={40} color="white">
-              Aqui seu pet é parte da nossa família!
-            </Typography>
-            <Typography color="white" fontSize={26}>
-              Na Viva Pet, seu pet encontrará um lar longe de casa, cercado por amor, carinho e um
-              ambiente familiar. Conheça nossos serviços!
+    <Box id="inicio" mt={10}>
+      <Box p={5} bgcolor="primary.dark" display="flex" justifyContent="center">
+        <GridContainer container spacing={{ xs: 4, md: 10 }}>
+          <Grid size={{ xs: 12, md: 6 }} textAlign="center" alignContent="center">
+            <BoldTitle>{Constants.title}</BoldTitle>
+            <Typography color="white" fontSize={{ xs: 20, md: 26 }}>
+              {Constants.subtitle}
             </Typography>
           </Grid>
-          <Grid size={6}>
+          <Grid size={{ xs: 12, md: 6 }} display="flex" justifyContent="center">
             <Box position="relative" height={500} width={480}>
-              <Image
-                src={intro}
-                alt="anita com cachorros"
-                fill
-                style={{
-                  objectFit: 'cover',
-                  borderRadius: '20px',
-                  border: '4px solid',
-                  borderColor: '#95C11F',
-                }}
-              />
+              <StyledImage src={intro} alt="Anita com Beta e Carbono" fill />
             </Box>
           </Grid>
-        </Grid>
+        </GridContainer>
       </Box>
       <SectionWithWave />
     </Box>
