@@ -22,7 +22,7 @@ const theme = createTheme({
       light: '#CDECB066',
     },
     secondary: {
-      dark: '#CC6B00',
+      dark: '#D55500',
       main: '#FF8600',
       light: '#FFA940',
     },

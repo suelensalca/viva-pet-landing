@@ -21,3 +21,11 @@ export const BoldTitle = styled(Typography)(({ theme }) => ({
     fontSize: '40px',
   },
 }));
+
+export const Text = styled(Typography)(({ theme }) => ({
+  fontSize: '20px',
+  color: 'white',
+  [theme.breakpoints.up('md')]: {
+    fontSize: '26px',
+  },
+}));
