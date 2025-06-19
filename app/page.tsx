@@ -1,5 +1,10 @@
-import { Typography } from '@mui/material';
+import { Box } from '@mui/material';
+import Intro from './components/intro';
 
 export default function Home() {
-  return <Typography>Viva Pet</Typography>;
+  return (
+    <Box>
+      <Intro />
+    </Box>
+  );
 }
