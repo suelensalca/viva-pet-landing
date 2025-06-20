@@ -30,6 +30,7 @@ export default function Navbar() {
     { label: 'Sobre', href: '#sobre' },
     { label: 'Creche', href: '#creche' },
     { label: 'Hospedagem', href: '#hospedagem' },
+    { label: 'Sitter', href: '#sitter' },
     { label: 'Passeio', href: '#passeio' },
     { label: 'Contato', href: '#contato' },
   ];
