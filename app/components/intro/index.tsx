@@ -9,7 +9,12 @@ import { Constants } from './constants';
 export default function Intro() {
   return (
     <Box id="inicio" mt={10}>
-      <Box p={5} bgcolor="primary.dark" display="flex" justifyContent="center">
+      <Box
+        px={{ xs: 2, md: 5 }}
+        py={5}
+        bgcolor="primary.dark"
+        display="flex"
+        justifyContent="center">
         <GridContainer container spacing={{ xs: 4, md: 10 }}>
           <Grid size={{ xs: 12, md: 6 }} textAlign="center" alignContent="center">
             <BoldTitle>{Constants.title}</BoldTitle>
