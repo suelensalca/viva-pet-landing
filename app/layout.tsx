@@ -3,6 +3,7 @@ import { AppRouterCacheProvider } from '@mui/material-nextjs/v15-appRouter';
 import { CssBaseline, ThemeProvider } from '@mui/material';
 import theme from '@/styles/theme';
 import Navbar from './components/navbar';
+import Footer from './components/footer';
 
 export const metadata: Metadata = {
   title: 'Viva Pet',
@@ -25,6 +26,7 @@ export default function RootLayout({
             <CssBaseline />
             <Navbar />
             {children}
+            <Footer />
           </ThemeProvider>
         </AppRouterCacheProvider>
       </body>

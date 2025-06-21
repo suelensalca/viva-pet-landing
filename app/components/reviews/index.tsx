@@ -35,7 +35,7 @@ export default function Reviews() {
     <Box textAlign="center" margin={{ xs: '20px', md: '80px 40px' }}>
       <Title>Depoimentos</Title>
       <Subtitle>Avaliações que aquecem o coração!</Subtitle>
-      <Grid container spacing={4} mx={{ xs: 4, lg: 10 }} my={2} alignItems="center">
+      <Grid container spacing={4} mx={{ xs: 0, lg: 10 }} my={2} alignItems="center">
         <Grid size={{ xs: 12, md: 4 }}>
           <Title>EXCELENTE</Title>
           <Rating value={5} />
