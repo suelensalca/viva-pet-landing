@@ -61,11 +61,8 @@ export const StyledSwiperSlide = styled(SwiperSlide)(({ theme }) => ({
   '& img': {
     objectFit: 'contain',
     width: '100%',
-    maxWidth: '1920px',
-    height: '620px',
-    [theme.breakpoints.down('xxl')]: {
-      height: '480px',
-    },
+    maxWidth: '920px',
+    height: '480px',
     [theme.breakpoints.down('xl')]: {
       height: '440px',
     },
@@ -73,10 +70,7 @@ export const StyledSwiperSlide = styled(SwiperSlide)(({ theme }) => ({
       height: '340px',
     },
     [theme.breakpoints.down('md')]: {
-      height: '220px',
-    },
-    [theme.breakpoints.down('sm')]: {
-      height: '500px',
+      height: '280px',
     },
   },
 }));
