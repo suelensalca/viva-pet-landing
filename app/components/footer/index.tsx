@@ -1,6 +1,6 @@
 'use client';
 
-import EmailIcon from '@mui/icons-material/Email';
+import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import Image from 'next/image';
@@ -55,10 +55,10 @@ export default function Footer() {
               <WhatsAppIcon sx={{ fontSize: { xs: 36, sm: 45 } }} />
             </CleanLink>
             <CleanLink
-              href="mailto:anitadivito10@gmail.com"
+              href="https://www.facebook.com/people/Anita-Petsitter/61556124382061"
               target="_blank"
               rel="noopener noreferrer">
-              <EmailIcon sx={{ fontSize: { xs: 36, sm: 45 } }} />
+              <FacebookIcon sx={{ fontSize: { xs: 36, sm: 45 } }} />
             </CleanLink>
           </Box>
         </Section>
