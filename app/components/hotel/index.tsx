@@ -20,10 +20,10 @@ export default function Hotel() {
         <GridContainer container spacing={{ xs: 0, lg: 10 }}>
           <Grid size={{ xs: 12, lg: 6 }} display="flex" justifyContent="center" alignItems="center">
             <Box position="relative" height={{ xs: 300, sm: 380, md: 420 }} width={320}>
-              <StyledImage src={hotel2} alt="Anita com Beta e Carbono" fill />
+              <StyledImage src={hotel2} alt="Cachorros na creche" fill />
             </Box>
             <SecImage>
-              <StyledImage src={hotel1} alt="Cachorro Carbono" fill />
+              <StyledImage src={hotel1} alt="Anita com Beta e Carbono" fill />
             </SecImage>
           </Grid>
           <Grid size={{ xs: 12, lg: 6 }} textAlign="center" alignContent="center">
