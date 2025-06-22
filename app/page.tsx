@@ -5,6 +5,7 @@ import Services from './components/services';
 import Reviews from './components/reviews';
 import Daycare from './components/daycare';
 import Hotel from './components/hotel';
+import Sitter from './components/sitter';
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <Reviews />
       <Daycare />
       <Hotel />
+      <Sitter />
     </Box>
   );
 }
