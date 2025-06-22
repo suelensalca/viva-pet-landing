@@ -7,6 +7,7 @@ import Daycare from './components/daycare';
 import Hotel from './components/hotel';
 import Sitter from './components/sitter';
 import Walk from './components/walk';
+import Contact from './components/contact';
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       <Hotel />
       <Sitter />
       <Walk />
+      <Contact />
     </Box>
   );
 }
