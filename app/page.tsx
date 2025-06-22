@@ -6,6 +6,7 @@ import Reviews from './components/reviews';
 import Daycare from './components/daycare';
 import Hotel from './components/hotel';
 import Sitter from './components/sitter';
+import Walk from './components/walk';
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <Daycare />
       <Hotel />
       <Sitter />
+      <Walk />
     </Box>
   );
 }
