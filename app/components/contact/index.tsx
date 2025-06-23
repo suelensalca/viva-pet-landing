@@ -62,7 +62,7 @@ export default function Contact() {
               <WhatsAppIcon sx={{ fontSize: 40 }} />
             </CleanLink>
             <CleanLink
-              href="https://www.instagram.com/anita_petsitte"
+              href="https://www.instagram.com/anita_petsitter"
               target="_blank"
               rel="noopener noreferrer">
               <InstagramIcon sx={{ fontSize: 40 }} />
