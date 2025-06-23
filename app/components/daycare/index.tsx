@@ -9,7 +9,7 @@ import { Constants } from './constants';
 
 export default function Daycare() {
   return (
-    <Box id="creche" mt={10}>
+    <Box id="creche" mt={10} sx={{ scrollMarginTop: '80px' }}>
       <TopSectionWithWave />
       <Box
         px={{ xs: 2, md: 5 }}

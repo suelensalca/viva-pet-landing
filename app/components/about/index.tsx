@@ -8,7 +8,7 @@ import { Constants } from './constants';
 
 export default function About() {
   return (
-    <Box id="sobre" mt={10}>
+    <Box id="sobre" mt={10} sx={{ scrollMarginTop: '80px' }}>
       <TopSectionWithWave />
       <Box
         px={{ xs: 2, md: 5 }}

@@ -1,7 +1,7 @@
 'use client';
 
 import { Box } from '@mui/material';
-import walk from '../../assets/dog_walk.jpg';
+import walk from '../../assets/dog_walk.jpeg';
 import sitter from '../../assets/cat_sitter.jpeg';
 import daycare from '../../assets/dog_daycare.jpg';
 import hotel from '../../assets/dog_hotel.jpeg';

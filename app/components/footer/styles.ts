@@ -7,7 +7,7 @@ export const Container = styled(Box)(({ theme }) => ({
   alignItems: 'center',
   backgroundColor: theme.palette.primary.dark,
   width: '100%',
-  padding: '40px 80px',
+  padding: '40px 80px 60px',
   [theme.breakpoints.down('sm')]: {
     padding: '40px',
   },
@@ -94,3 +94,8 @@ export const LogoBox = styled(Box)(() => ({
   alignItems: 'center',
   marginBottom: '16px',
 }));
+
+export const SmallIcon = {
+  fontSize: '21px',
+  marginRight: '4px',
+};

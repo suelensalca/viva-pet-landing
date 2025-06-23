@@ -28,10 +28,7 @@ export default function Navbar() {
   const menuItems = [
     { label: 'Início', href: '#inicio' },
     { label: 'Sobre', href: '#sobre' },
-    { label: 'Creche', href: '#creche' },
-    { label: 'Hospedagem', href: '#hospedagem' },
-    { label: 'Sitter', href: '#sitter' },
-    { label: 'Passeio', href: '#passeio' },
+    { label: 'Serviços', href: '#creche' },
     { label: 'Contato', href: '#contato' },
   ];
 
