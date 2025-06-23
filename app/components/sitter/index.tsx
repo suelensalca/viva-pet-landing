@@ -9,7 +9,7 @@ import { Constants } from './constants';
 
 export default function Sitter() {
   return (
-    <Box id="sitter" mt={10}>
+    <Box id="sitter" mt={10} sx={{ scrollMarginTop: '80px' }}>
       <TopSectionWithWave />
       <Box
         px={{ xs: 2, md: 5 }}

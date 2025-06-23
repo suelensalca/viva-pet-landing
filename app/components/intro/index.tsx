@@ -8,7 +8,7 @@ import { Constants } from './constants';
 
 export default function Intro() {
   return (
-    <Box id="inicio" mt={10}>
+    <Box id="inicio" mt={10} sx={{ scrollMarginTop: '80px' }}>
       <Box
         px={{ xs: 2, md: 5 }}
         py={5}

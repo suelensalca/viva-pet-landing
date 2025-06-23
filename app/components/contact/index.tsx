@@ -27,7 +27,11 @@ import { Faq } from './constants';
 
 export default function Contact() {
   return (
-    <Box id="contato" textAlign="center" margin={{ xs: '20px', md: '80px 40px' }}>
+    <Box
+      id="contato"
+      textAlign="center"
+      margin={{ xs: '20px', md: '80px 40px' }}
+      sx={{ scrollMarginTop: '100px' }}>
       <Grid container spacing={4} mx={{ xs: 0, lg: 10 }} my={2}>
         <Grid size={{ xs: 12, md: 4 }} textAlign={{ xs: 'center', md: 'left' }}>
           <Title>Contato</Title>
