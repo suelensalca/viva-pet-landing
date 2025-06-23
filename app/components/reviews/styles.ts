@@ -75,7 +75,7 @@ export const StyledSwiperSlide = styled(SwiperSlide)(({ theme }) => ({
     [theme.breakpoints.down('sm')]: {
       height: '420px',
     },
-    '@media (max-width:400px)': {
+    '@media (max-width:480px)': {
       height: '340px',
     },
   },
