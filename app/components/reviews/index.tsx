@@ -16,26 +16,48 @@ import review5 from './../../assets/reviews/review5.png';
 import review6 from './../../assets/reviews/review6.png';
 import review7 from './../../assets/reviews/review7.png';
 import review8 from './../../assets/reviews/review8.png';
+import reviewmobile1 from './../../assets/reviews/reviewmobile1.png';
+import reviewmobile2 from './../../assets/reviews/reviewmobile2.png';
+import reviewmobile3 from './../../assets/reviews/reviewmobile3.png';
+import reviewmobile4 from './../../assets/reviews/reviewmobile4.png';
+import reviewmobile5 from './../../assets/reviews/reviewmobile5.png';
+import reviewmobile6 from './../../assets/reviews/reviewmobile6.png';
+import reviewmobile7 from './../../assets/reviews/reviewmobile7.png';
+import reviewmobile8 from './../../assets/reviews/reviewmobile8.png';
 import google from './../../assets/google.png';
 import { CleanLink, Container, StyledSwiperSlide, Subtitle, Title } from './styles';
-import { Box, Grid, Rating } from '@mui/material';
+import { Box, Grid, Rating, useMediaQuery } from '@mui/material';
 
 export default function Reviews() {
-  const images = [
-    { image: review1, name: 'avaliação 1' },
-    { image: review2, name: 'avaliação 2' },
-    { image: review3, name: 'avaliação 3' },
-    { image: review4, name: 'avaliação 4' },
-    { image: review5, name: 'avaliação 5' },
-    { image: review6, name: 'avaliação 6' },
-    { image: review7, name: 'avaliação 7' },
-    { image: review8, name: 'avaliação 8' },
-  ];
+  const isMobile = useMediaQuery('(max-width:599px)');
+
+  const images = isMobile
+    ? [
+        { image: reviewmobile1, name: 'avaliação 1' },
+        { image: reviewmobile2, name: 'avaliação 2' },
+        { image: reviewmobile3, name: 'avaliação 3' },
+        { image: reviewmobile4, name: 'avaliação 4' },
+        { image: reviewmobile5, name: 'avaliação 5' },
+        { image: reviewmobile6, name: 'avaliação 6' },
+        { image: reviewmobile7, name: 'avaliação 7' },
+        { image: reviewmobile8, name: 'avaliação 8' },
+      ]
+    : [
+        { image: review1, name: 'avaliação 1' },
+        { image: review2, name: 'avaliação 2' },
+        { image: review3, name: 'avaliação 3' },
+        { image: review4, name: 'avaliação 4' },
+        { image: review5, name: 'avaliação 5' },
+        { image: review6, name: 'avaliação 6' },
+        { image: review7, name: 'avaliação 7' },
+        { image: review8, name: 'avaliação 8' },
+      ];
+
   return (
     <Box textAlign="center" margin={{ xs: '20px', md: '80px 40px' }}>
       <Title>Depoimentos</Title>
       <Subtitle>Avaliações que aquecem o coração!</Subtitle>
-      <Grid container spacing={4} mx={{ xs: 0, lg: 10 }} my={2} alignItems="center">
+      <Grid container spacing={{ xs: 2, md: 4 }} mx={{ xs: 0, lg: 10 }} my={2} alignItems="center">
         <Grid size={{ xs: 12, md: 4 }}>
           <Title>EXCELENTE</Title>
           <Rating value={5} />
