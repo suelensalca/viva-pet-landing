@@ -1,10 +1,3 @@
-export const Constants = {
-  title: 'Creche',
-  firstPar: 'Proporcione os melhores momentos para o seu cão!',
-  secondPar:
-    'A creche para cachorros é a melhor opção para socialização e atividade física. As atividades e brincadeiras trazem estimulo mental e garantem um dia divertido e com muito gasto de energia!',
-};
-
 export const Faq = [
   {
     question: 'O que preciso para hospedar ou deixar na creche o meu cachorro?',

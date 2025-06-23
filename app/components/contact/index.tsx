@@ -11,22 +11,25 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import FacebookIcon from '@mui/icons-material/Facebook';
 
-import { CleanLink, Info, SmallIcon, Title } from './styles';
 import {
-  Accordion,
-  AccordionDetails,
-  AccordionSummary,
-  Box,
-  Grid,
-  Typography,
-} from '@mui/material';
+  AccordionText,
+  CleanLink,
+  Info,
+  LinkBox,
+  SmallIcon,
+  StyledAccordion,
+  StyledAccordionDetails,
+  StyledAccordionSum,
+  Title,
+} from './styles';
+import { Box, Grid } from '@mui/material';
 import { Faq } from './constants';
 
 export default function Contact() {
   return (
     <Box id="contato" textAlign="center" margin={{ xs: '20px', md: '80px 40px' }}>
       <Grid container spacing={4} mx={{ xs: 0, lg: 10 }} my={2}>
-        <Grid size={{ xs: 12, md: 4 }} textAlign="left">
+        <Grid size={{ xs: 12, md: 4 }} textAlign={{ xs: 'center', md: 'left' }}>
           <Title>Contato</Title>
           <CleanLink
             href={`tel:+${process.env.NEXT_PUBLIC_CELL}`}
@@ -47,7 +50,7 @@ export default function Contact() {
             </Info>
           </CleanLink>
           <Title mt={6}>Redes Sociais</Title>
-          <Box sx={{ color: 'secondary.dark', display: 'flex', gap: '20px' }}>
+          <LinkBox>
             <CleanLink
               href={`https://wa.me/55${process.env.NEXT_PUBLIC_CELL}`}
               target="_blank"
@@ -66,45 +69,20 @@ export default function Contact() {
               rel="noopener noreferrer">
               <FacebookIcon sx={{ fontSize: { xs: 32, sm: 40 } }} />
             </CleanLink>
-          </Box>
+          </LinkBox>
         </Grid>
         <Grid size={{ xs: 12, md: 8 }}>
           <Title>Perguntas e respostas</Title>
           {Faq.map(({ question, answer }) => (
-            <Accordion
-              key={question}
-              sx={{
-                bgcolor: '#F1F2F6',
-                border: 'none',
-                boxShadow: 'none',
-                borderRadius: '10px',
-              }}>
-              <AccordionSummary
+            <StyledAccordion key={question}>
+              <StyledAccordionSum
                 expandIcon={<ExpandMoreIcon />}
                 aria-controls={question}
-                id={question}
-                sx={{
-                  bgcolor: 'secondary.dark',
-                  marginBottom: '8px',
-                  borderRadius: '8px',
-                  span: { color: 'white' },
-                }}>
-                <Typography component="span" sx={{ color: 'white', fontSize: '26px' }}>
-                  {question}
-                </Typography>
-              </AccordionSummary>
-              <AccordionDetails
-                sx={{
-                  bgcolor: 'white',
-                  fontSize: '21px',
-                  textAlign: 'left',
-                  fontWeight: 500,
-                  marginBottom: '16px',
-                  padding: '20px',
-                }}>
-                {answer}
-              </AccordionDetails>
-            </Accordion>
+                id={question}>
+                <AccordionText>{question}</AccordionText>
+              </StyledAccordionSum>
+              <StyledAccordionDetails>{answer}</StyledAccordionDetails>
+            </StyledAccordion>
           ))}
         </Grid>
       </Grid>
