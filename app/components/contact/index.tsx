@@ -59,19 +59,19 @@ export default function Contact() {
               href={`https://wa.me/55${process.env.NEXT_PUBLIC_CELL}`}
               target="_blank"
               rel="noopener noreferrer">
-              <WhatsAppIcon sx={{ fontSize: { xs: 32, sm: 40 } }} />
+              <WhatsAppIcon sx={{ fontSize: 40 }} />
             </CleanLink>
             <CleanLink
               href="https://www.instagram.com/anita_petsitte"
               target="_blank"
               rel="noopener noreferrer">
-              <InstagramIcon sx={{ fontSize: { xs: 32, sm: 40 } }} />
+              <InstagramIcon sx={{ fontSize: 40 }} />
             </CleanLink>
             <CleanLink
               href="https://www.facebook.com/people/Anita-Petsitter/61556124382061"
               target="_blank"
               rel="noopener noreferrer">
-              <FacebookIcon sx={{ fontSize: { xs: 32, sm: 40 } }} />
+              <FacebookIcon sx={{ fontSize: 40 }} />
             </CleanLink>
           </LinkBox>
         </Grid>
