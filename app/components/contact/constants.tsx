@@ -34,8 +34,18 @@ export const Faq = [
       'É importante trazer a ração (caso o cão tenha o hábito de almoçar), e a guia/peitoral, para segurança, tanto nos horários de chegada quanto nos de saída.',
   },
   {
+    question: 'O que preciso levar para a hospedagem?',
+    answer:
+      'Ração suficiente para todo o tempo de hospedagem, medicamentos (caso houver) com receita, pote de comida e água, a guia/peitoral e caminha. Se preferir também pode trazer brinquedos mas lembramos que eles poderão ser compartilhados por outros cachorros.',
+  },
+  {
     question: 'Como funciona o pet sitter (cuidado domiciliar)?',
     answer:
       'Visitamos o seu melhor amigo de quatro patas no dia e horário marcado. Oferecemos alimentação, troca de água, higienização do ambiente, brincadeiras e, se necessário, medicação.',
+  },
+  {
+    question: 'Como funciona o passeio?',
+    answer:
+      'Buscamos o seu cão no dia e horário marcados. As caminhadas podem ser de 30 minutos ou 1 hora, individualmente ou em grupo, conforme combinado com o tutor.',
   },
 ];
